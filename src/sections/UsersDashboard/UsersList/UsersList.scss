@@ -1,0 +1,72 @@
+@import 'styles/variables.scss';
+.list-header{
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	border-bottom: 1px solid $backgroundColor;
+	div {
+		padding: 1rem 2rem;
+		color: $font;
+		font-weight: bold;
+		font-size: 	1.125rem;
+		&:nth-child(1){
+			min-width: 20rem;
+		}
+		&:nth-child(2){
+			width: 100%;
+		}
+	}
+}
+
+.item-wrapper{
+	display:flex;
+	flex-direction: row;
+	background-color: white;
+	cursor:pointer;
+	&:hover{
+		background-color: darken(white, 5);
+	}
+}
+
+.user-card {
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 1rem 2rem;
+	min-width: 20rem;
+	&-image{
+		img{
+			width: 5rem;
+			height: 5rem;
+			border-radius: 100rem;
+		}
+	}
+	&-info{
+		display:flex;
+		flex-direction:column;
+		justify-content: space-around;
+		padding-left: 1.25rem;
+		padding-top: 1rem;
+		span{
+			padding: 0.25rem 0rem;
+			&:nth-child(1){
+				color: $font;
+				font-weight: bold;
+				font-size: 	1.125rem;
+			}
+			&:nth-child(2){
+				color: $primary;
+				font-weight: 500;
+				cursor: pointer;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+.user-description{
+	width: 100%;
+	padding: 1rem 2rem;
+}

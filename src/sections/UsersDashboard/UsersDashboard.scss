@@ -1,0 +1,19 @@
+.dashboard-wrapper{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 5rem;
+}
+
+.dashboard-options{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.users-list{
+	margin-top: 2rem;
+	box-shadow: -5px 10px 20px lighten(#6C6C6C,35);
+}

@@ -1,0 +1,25 @@
+.search-input-wrapper{
+	background-color: white;
+	display:flex;
+	flex-direction:row;
+	border-radius: 5px;
+	
+	.input-logo{
+		display:flex;
+		justify-content: center;
+		align-items:center;
+		padding: 0.5rem;
+	}
+	input{
+		border-radius: 5px;
+		border: none;
+		width: 30rem;
+		padding: 0.25rem;
+	}
+	input.name{
+		width: 30rem;
+	}
+	input:focus{
+		outline: none;
+	}
+}

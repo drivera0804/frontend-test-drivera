@@ -1,0 +1,18 @@
+@import './../../styles/variables.scss';
+
+.button-wrapper{
+	button {
+		background-color: $primary;
+		border: none;
+		color: white;
+		font-weight: thin;
+		cursor: pointer;
+		letter-spacing: 1px;
+		font-size: 1.125rem;
+		padding: 0.75rem 1.25rem;
+		border-radius: 0.1875rem;
+	}
+	button:hover {
+		background-color: darken($primary,10);
+	}
+}

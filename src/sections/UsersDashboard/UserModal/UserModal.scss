@@ -1,0 +1,7 @@
+@import 'styles/variables.scss';
+.modal-header{
+	background-color: white;
+	padding: 1.5rem 1.5rem;
+	border-bottom: 1px solid $border;
+	color: $font;
+}
