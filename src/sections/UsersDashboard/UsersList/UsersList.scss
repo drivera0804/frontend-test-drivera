@@ -1,32 +1,4 @@
 @import 'styles/variables.scss';
-.list-header{
-	display: flex;
-	flex-direction: row;
-	background-color: white;
-	border-bottom: 1px solid $backgroundColor;
-	div {
-		padding: 1rem 2rem;
-		color: $font;
-		font-weight: bold;
-		font-size: 	1.125rem;
-		&:nth-child(1){
-			min-width: 20rem;
-		}
-		&:nth-child(2){
-			width: 100%;
-		}
-	}
-}
-
-.item-wrapper{
-	display:flex;
-	flex-direction: row;
-	background-color: white;
-	cursor:pointer;
-	&:hover{
-		background-color: darken(white, 5);
-	}
-}
 
 .user-card {
 	display:flex;
@@ -36,8 +8,8 @@
 	min-width: 20rem;
 	&-image{
 		img{
-			width: 5rem;
-			height: 5rem;
+			width: 2.15rem;
+			height: 2.15rem;
 			border-radius: 100rem;
 		}
 	}

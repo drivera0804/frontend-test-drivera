@@ -1,7 +1,7 @@
 import React from 'react'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
-import Button from 'components/Button'
+import { Button } from '@beetrack/hp-components'
 import Input from 'components/Input'
 import './UserForm.scss'
 
@@ -22,7 +22,7 @@ class UserForm extends React.Component {
     } = this.props
     return (
       <Formik
-        initialValues={values || { photo: '', name: '', description: '' }}
+        initialValues={values}
         validationSchema={validationSchema}
         onSubmit={(values, { setSubmitting }) => {
           return handleSubmitUser(values)
@@ -36,6 +36,7 @@ class UserForm extends React.Component {
           handleSubmit,
           isSubmitting
         }) => (
+
           <form onSubmit={handleSubmit}>
             <div className='form-wrapper'>
               <Input
@@ -65,10 +66,14 @@ class UserForm extends React.Component {
                 isRequired
                 handleChange={handleChange}
               />
-              <Button
-                label='Guardar'
-                type='submit'
-              />
+              <div className='submit-button'>
+                <Button
+                  type='primary'
+                  onClick={handleSubmit}
+                >
+                  Guardar
+                </Button>
+              </div>
             </div>
           </form>
         )}
