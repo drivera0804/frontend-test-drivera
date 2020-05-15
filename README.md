@@ -7,6 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Instruction
 
 1. You must create a .env file with the following line `SASS_PATH=./node_modules` 
+2. You must initialize the frontend-test backend server in the port `3000` (already declared)
+3. run `yarn start` in the terminal (it will ask for another port to initialize)
 
 ## Available Scripts
 
